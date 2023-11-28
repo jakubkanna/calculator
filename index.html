@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div id="calculator">
+        <div class="row">
+          <div class="wrapper">
+            <div class="col" id="screen">
+              <div class="operation-history"></div>
+              <div class="operation">0</div>
+            </div>
+          </div>
+          <div class="col" id="branding">Calculator Website</div>
+        </div>
+        <div class="row" id="numbers">
+          <!-- Number buttons -->
+          <button type="button" class="btn" id="btn-1" data-code="Numpad1">
+            1
+          </button>
+          <button type="button" class="btn" id="btn-2" data-code="Numpad2">
+            2
+          </button>
+          <button type="button" class="btn" id="btn-3" data-code="Numpad3">
+            3
+          </button>
+          <button type="button" class="btn" id="btn-4" data-code="Numpad4">
+            4
+          </button>
+          <button type="button" class="btn" id="btn-5" data-code="Numpad5">
+            5
+          </button>
+          <button type="button" class="btn" id="btn-6" data-code="Numpad6">
+            6
+          </button>
+          <button type="button" class="btn" id="btn-7" data-code="Numpad7">
+            7
+          </button>
+          <button type="button" class="btn" id="btn-8" data-code="Numpad8">
+            8
+          </button>
+          <button type="button" class="btn" id="btn-9" data-code="Numpad9">
+            9
+          </button>
+          <button type="button" class="btn" id="btn-0" data-code="Numpad0">
+            0
+          </button>
+
+          <!-- Special keys -->
+          <button class="btn" id="btn-clear" data-code="KeyC">C</button>
+          <button class="btn" id="btn-delete" data-code="Backspace">
+            back
+          </button>
+          <button class="btn" id="btn-decimal" data-code="NumpadDecimal">
+            .
+          </button>
+          <button class="btn" id="btn-equals" data-code="NumpadEnter">=</button>
+
+          <!-- Operator buttons -->
+          <button class="btn" id="btn-plus" data-code="NumpadAdd">+</button>
+          <button class="btn" id="btn-minus" data-code="NumpadSubtract">
+            -
+          </button>
+          <button class="btn" id="btn-multiply" data-code="NumpadMultiply">
+            *
+          </button>
+          <button class="btn" id="btn-divide" data-code="NumpadDivide">
+            /
+          </button>
+          <!-- mini-screen -->
+          <div class="wrapper max-height">
+            <div id="mini-screen" class="row">
+              <div class="col-3">
+                <ul class="menu">
+                  <li class="menu-item" id="menu-home">Home</li>
+                  <li class="menu-item" id="menu-about">About</li>
+                  <li class="menu-item" id="menu-contact">Contact</li>
+                </ul>
+              </div>
+              <div class="col-9">
+                <div class="menu p">
+                  <p class="page-content" id="home">
+                    Welcome to the Calculator Website.
+                  </p>
+                  <p class="page-content" id="about">
+                    Created for all those who are passionate about calculators.
+                    <br />Page source is available at:
+                    <a href="#">blabla.github.io</a>
+                  </p>
+                  <p class="page-content" id="contact">
+                    Email: hello.jakubkanna@gmail.com<br />If you encounter any
+                    errors or bugs, please consider opening a ticket in the
+                    GitHub repository.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+a,
+.menu-item {
+  text-decoration: underline;
+  cursor: pointer;
+}
+a,
+.menu-item:hover {
+  color: white;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.col-3 {
+  width: 100%;
+}
+
+.col-9 {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .col-3 {
+    width: calc(8.33% * 3);
+  }
+
+  .col-9 {
+    width: calc(8.33% * 9);
+  }
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper {
+  display: flex;
+  width: 50%;
+}
+.btn {
+  width: 25%;
+  height: calc(100% / 5);
+  display: flex;
+  padding: 12px;
+  font-size: 1.3rem;
+  transition: 0.1s;
+}
+
+.pressed {
+  background-color: rgb(255, 156, 214);
+}
+
+.operation-history {
+  font-size: 24px;
+}
+.max-height {
+  max-height: calc(100% / 5);
+}
+#screen,
+#mini-screen {
+  margin: 6px;
+  padding: 12px;
+  background-color: rgb(20, 20, 20);
+  color: rgb(209, 209, 209);
+  border-radius: 6px;
+  font-family: monospace;
+  overflow: auto;
+  width: 100%;
+}
+#branding {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  padding: 12px;
+  margin: 6px;
+}
+.p {
+  padding: 12px;
+}
+.m {
+  margin: 6px;
+}
+.container,
+#numbers {
+  height: 100%;
+}
+
+#calculator {
+  max-width: 100%;
+  height: 100%;
+  background-color: rgb(205, 205, 205);
+  display: flex;
+  flex-direction: column;
+}
+#btn-decimal {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align content to the start (left) */
+  justify-content: flex-end; /* Align content to the bottom */
+}
+#btn-delete {
+  font-size: 0.9rem;
+}
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
